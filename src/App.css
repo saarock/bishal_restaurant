@@ -1,0 +1,214 @@
+:root {
+  --primary: #f59e0b;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 700;
+  font-style: italic;
+
+
+}
+
+body {
+  font-family: inherit;
+  background-color: rgb(194, 199, 199);
+}
+
+.nav {
+  background: linear-gradient(#ffd69475, #ffd69475);
+  z-index: 999
+}
+
+.main-menu {
+  padding: 1rem;
+  border-radius: 2rem;
+  z-index: 999999;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+
+
+/* hero css start */
+.hero {
+  background: linear-gradient(#ffd69475, #ffbb461a), url("../images/one.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  backdrop-filter: blur(3px); /* Ensures the background is blurred */
+}
+
+.hero .hero-child {
+  position: relative;
+  z-index: 2; /* Keeps the child unaffected */
+  filter: none; /* Ensures the child content is sharp */
+  background: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.229));
+}
+.hero-right-child {
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+
+
+/* hero css end */
+
+
+
+/* service start */
+#service {
+  position: relative;
+  top: -8rem;
+  z-index: 2;
+}
+
+.service-child {
+  background-color: white;
+  border-radius: 4rem;
+  overflow: hidden;
+  border: 2px solid rgba(128, 128, 128, 0.218);
+}
+
+
+/* /service end  */
+
+
+/* famouse section start  */
+.famous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  border-top: 2px solid rgba(128, 128, 128, 0.218);
+  padding: 1rem;
+
+}
+
+.child-container {
+  width: 84%;
+}
+
+.famous-best {
+  font-size: 3rem;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-container-right-child p {
+  color: gray;
+}
+
+
+/* owner and tech css start */
+.owner {
+  background-color: rgb(150, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.tech {
+  background-color: rgb(147, 150, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/* owner and tech css start */
+
+/* famouse section end */
+
+/* lightbox css start */
+
+/* lightbox end */
+
+
+/* responsive css start */
+
+@media only screen and (max-width:1047px) {
+  #service {
+      /* background-color: red; */
+      position: relative;
+      top: 25rem;
+      margin-bottom: 23rem;
+  }
+
+}
+
+
+
+@media only screen and (max-width:849px) {
+  #service {
+      /* background-color: red; */
+      position: relative;
+      top: 21rem;
+      margin-bottom: 23rem;
+  }
+
+}
+
+@media only screen and (max-width:640px) {
+  #service {
+      /* background-color: red; */
+      position: relative;
+      top: 16rem;
+      margin-bottom: 16rem;
+  }
+
+}
+
+@media only screen and (max-width: 740px) {
+  .hero-right-child {
+      height: 22rem;
+      /* box-shadow: 0rem 0rem 2rem 2rem rgb(225, 199, 4); */
+      margin: 0;
+      position: relative;
+      top: 4rem;
+  }
+
+  .hero-right-child img {
+      height: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1180px) {
+#service {
+  position: relative;
+  top: 12rem;
+}
+
+}
+/* responsive css start */

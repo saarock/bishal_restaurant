@@ -40,6 +40,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
+          
 
           {/* Right Side Dish Images */}
           <div className="hero-right w-full lg:w-1/2 mt-8 lg:mt-0">

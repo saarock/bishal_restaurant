@@ -10,20 +10,6 @@ const RestaurantPartner = () => {
       instagramLink: 'https://www.instagram.com/bishal_bhusal12/',
       image: './images/owner.png'
     },
-    {
-      name: 'Partner Two',
-      role: 'Chef',
-      phone: ['1234567890', '01-1234567'],
-      instagramLink: 'https://www.instagram.com/partner_two/',
-      image: './images/partner_two.png'
-    },
-    {
-      name: 'Partner Three',
-      role: 'Manager',
-      phone: ['9876543210', '01-7654321'],
-      instagramLink: 'https://www.instagram.com/partner_three/',
-      image: './images/partner_three.png'
-    }
     // Add more partners as needed
   ];
 
@@ -59,7 +45,10 @@ const RestaurantPartner = () => {
                   <h3 className="text-xl font-semibold text-gray-800">{partner.name}</h3>
                   <p className="text-gray-600 owner">{partner.role}</p>
                   <p className="mb-1 text-lg">
-                    Phone: <span className="text-green-400">{partner.phone.join('<br />')}</span>
+                    Phone: <span className="text-green-400">
+                    {partner.phone.map(currentPhoneNumber => <span>{currentPhoneNumber} <br /></span>)}
+
+                    </span>
                   </p>
                   <p className="text-lg">
                     Follow us on social media:
